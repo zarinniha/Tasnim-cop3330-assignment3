@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class nameShorter
+{
+   -arrList:ArrayList<String>
+    +main()
+    +list = createList() object
+    +print = printAnswer() object
+}
+
+class createList
+{
+   +createList():ArrayList<String>
+}
+
+
+
+class printAnswer
+{
+    +printList(ArrayList<String>)
+}
+
+nameShorter "use createList to get names from file and create arraylist"---createList
+nameShorter "use printAnswer to create and print in output file"----printAnswer
+@enduml

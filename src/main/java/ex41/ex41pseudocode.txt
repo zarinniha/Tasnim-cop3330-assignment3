@@ -1,0 +1,37 @@
+/*
+class nameShorter
+{
+    main()
+    {
+         ->createList: create a list from the input file
+         ->arrList: the name of the arrayList from the input file
+         ->list.get_Arraylist: call the createList class to get the sorted arrayList
+         ->printAnswer: prints the output file
+         ->print.printList: call the printAnswer method to print the output file
+           where it takes the arrayList in its parameter
+    }
+}
+
+class createList
+{
+     get_Arraylist()
+     {
+          ->inFile: the input file
+          ->Scanner sc: redas the input file line by line
+          ->ArrayList<String> input : created arrayList from the reading of the input file
+          ->Collections.sort:: sort the arrayList alphabetacially
+          ->returns the created sorted arrayList
+     }
+}
+
+class printAnswer
+{
+   printList()
+   {
+      ->printList: takes the sorted arrayList in its parameter from main
+      ->outFile: the output file where the output will be written
+      ->prints the sorted arrayList if the input file exists,
+        if not it prints an error
+   }
+}
+/*

@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class websiteGenerator
+{
+  -site,author,jsAns,cssAns: String
+  main()
+  +user=askUser() object
+  +create=createHTML() object
+
+}
+
+class askUser
+ {
+    -sc:Scanner
+    +getSiteName():String
+    +getAuthorName():String
+    +getjsAnswer():String
+    +getcssAnswer():String
+
+ }
+
+class  createHTML
+{
+  +websiteExists(File):boolean
+  +createFolder(String,String)
+  +createHTML(String,String,String)
+  +printOutput(String,String,String,String)
+
+}
+
+
+websiteGenerator "ask user the author,site name and answer to make js and css folder"--askUser
+websiteGenerator "create and printthe HTML,css,js folder based on the user input"--createHTML
+
+@enduml

@@ -1,0 +1,62 @@
+
+class websiteGenerator
+{
+     ->created askUser object named user
+     ->called the user class to get the site and author name and
+       to get the answer of creating the js and css folder
+     ->created createHTML object called create
+     ->create creates the HTML file and css and js File based
+       on the users answer and prints the context of the HTML file
+}
+
+class askUser
+{
+   getSiteName()
+   {
+      ->ask the user the website's name and returns it
+   }
+
+   getAuthorName()
+   {
+      ->ask the user the author's name and returns it
+   }
+
+   getjsAnswer()
+   {
+      ->ask the user the answer of creating the js file and returns it
+   }
+
+   getcssAnswer()
+    {
+      ->ask the user the answer of creating the css file and returns it
+    }
+}
+
+class createHTML()
+{
+    websiteExists()
+    {
+      ->checks if the the file in the parameters exists in the directory
+      ->returns in the format of boolean
+    }
+
+    createFolder()
+    {
+       ->creates a folder base on the name user provides
+       ->if that folder is existed in directory a new folder will not create
+         if the folder doesn't exists, creates the folder
+    }
+
+    createHTML()
+    {
+       ->creates the context of the HTML folder based on the useer input
+    }
+
+    void printOutput()
+    {
+       -> gets the current path of the directory by user.dir
+       -> if the folder doesn't exits creates the folder based on the user input
+       -> based on the user input creates js and css folder
+        ->in terms of any error prints an error message
+    }
+}

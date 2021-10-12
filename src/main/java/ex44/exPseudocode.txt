@@ -1,0 +1,44 @@
+class productSearch
+{
+   main()
+   {
+       ->call Product class by pr
+       ->call readJson class by read
+       -> create String path that contains the current path
+       ->create JsonParser object to parse the json input file
+       -> create object from the parsing version of the input file
+       ->create JsonObject and JsonArray fromn the input file
+       ->read the inpuit file by iterating
+       ->if there is any error, it will print an error message
+   }
+}
+
+class Product
+{
+   getName()
+   {
+      ->gets the product name we need to search from the user
+       and returns it
+
+   }
+
+   print()
+   {
+       ->prints the associated information of the product if
+         user products exists in the file
+       ->if the product doesn't exist, it prints an wrror
+   }
+}
+
+class readJson
+{
+   iterateJson()
+   {
+      ->iterate through the input file and create an object
+        based on the product name
+      ->if there is a match prints the answer and if not it
+        keeps asking the user to provide a product's name
+
+
+   }
+}

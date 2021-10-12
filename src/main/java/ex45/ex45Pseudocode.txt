@@ -1,0 +1,37 @@
+class wordFinder
+{
+     main()
+     {
+         ->get the current path in a string format
+         ->call the ReadIn class name read
+         ->read.createString returns the input file after
+          reading it, in a string format
+         ->call the newWord class name finder
+         ->finder.replaceWords returns a new String that prints
+           the newer version of the input file with replaced words
+         ->finder.printFile create an output file and prints the
+           new String
+     }
+}
+
+class ReadIn
+{
+   createString()
+   {
+      ->reads the input file and creates a string and returns it
+   }
+}
+
+class newWord
+{
+    replaceWords()
+    {
+       ->replaces the word utilize with use and returns the newer version of the string
+    }
+
+    printFile()
+    {
+        ->creates an output file by the user input
+        ->prints the newer version of the string to the output file
+    }
+}

@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class wordFinder
+{
+   -st,newString,currentPath:String
+
+   +main()
+   +read= ReadIn() object
+   +finder= newWord() object
+}
+
+class ReadIn
+{
+
+   +createString(String):String
+}
+
+class newWord
+{
+  +replaceWords(String):String
+  +printFile(String,String)
+}
+
+wordFinder "ReadIn reads the input file and creates a string"--- ReadIn
+wordFinder "newWord replaces the words of the string and prints the new string"--- newWord
+@enduml

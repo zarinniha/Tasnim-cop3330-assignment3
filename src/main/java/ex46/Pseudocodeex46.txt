@@ -1,0 +1,39 @@
+class wordFrequencyFinder
+{
+     main()
+     {
+         ->call the readString class name read
+         ->wordFrequencyFinder redas the input file and returns
+           it in the format of string
+         ->call the  findFrequency class call freq
+         -> freq.frequencyCounter creates an arrayList based on the
+            frequency of each word in the input file
+         -> freq.print prints the frequency of words in histogram
+     }
+}
+
+class readingString
+{
+    readString()
+    {
+        ->reads the inputs file and creates a string of the file
+        ->returns the input file in string format
+    }
+}
+
+class findFrequency
+{
+    frequencyCounter()
+    {
+      ->creates a map where the value is the frequency of
+        each word of the input file and key is the words in file
+      -> creates an array to split the string and we can access each word
+      ->it returns the map
+    }
+
+    print()
+    {
+      ->it prints the map where the values that represent the frequency
+        of each words in histogram
+    }
+}
